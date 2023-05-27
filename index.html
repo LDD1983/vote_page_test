@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黑箱作業</title>
+        <link rel="stylesheet" href="./basic.css">
+        <link rel="stylesheet" href="./center.css">
+        <link rel="stylesheet" href="./form.css">
+        <link rel="stylesheet" href="./header.css">
+        <link rel="stylesheet" href="./list.css">
+        <link rel="stylesheet" href="./reset.css">
+
+
+    
+
+    <style>
+        ul {
+            width:100%;
+            list-style: none;
+            margin: 0 auto;
+        }
+        .desc-ul{
+            text-align: left;
+            padding-left: 7%;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            width: 20%;
+        }
+        .desc-ul>li{
+            margin-bottom: 5px;
+        }
+        ul>.vote-option-title{
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+            opacity: 0.6;
+            margin-top: 5px;
+            text-align:center;
+        }
+        .vote-item{
+            display: inline-block;
+            margin-bottom: 5px;
+            font-size: 1.rem;
+
+        }
+        .vote-item>a{
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-size: 1.4rem;
+            color: #501313;
+            opacity: 1;
+        }
+        .vote-item>a:hover{
+            color: #ff7575;
+            
+        }
+
+        .vote-item:first-child{
+            width: 8%;
+            text-align: left;
+        }
+        .vote-item:nth-child(2){
+            width: 40%;
+            text-align: left;
+            padding-left: 4%;
+        }
+        .vote-item:nth-child(3){
+            width: 10%;
+        }       
+        .index-li{
+            position: relative;
+        }
+
+
+
+       
+         
+        
+        li>button{
+            width: 100px;
+            height: 30px;
+            background-color:#FFC1C1;
+            /* color: white; */
+            border: 1px solid #ccc;
+       
+            font-size: 0.9rem;
+            position: relative;
+            left: 10%;
+
+        }
+     
+      
+        /* li>.go-vote:after{
+            content: 'vote';
+        } */
+       
+        /* .type-info{
+            position: absolute;
+            bottom: -10px;
+            left: 50%; */
+        
+        .chebox{
+            border-radius: 10px;
+        }
+        li>.type-info:hover{
+            opacity: 0.5;
+        }
+       
+        li>input{
+            margin-right: 5px;
+        }
+       
+        hr{
+            border: 0.3px solid #ccc;
+            opacity: 0.4;
+            width: 60%;
+            margin-top: 10px;
+        }
+        .img{
+            display:flex;
+           
+        }
+        .img>img{
+         
+            width: 100%;
+        }
+        
+        
+        div>.img-logoT{
+            position: relative;
+            bottom: 500px;
+        }
+        .img{
+           display: flex;
+        }
+        .img>img{
+            max-width: 100%;
+            height: auto;
+            
+        }
+        
+        main{
+            height: auto;
+        }
+
+        
+          
+    </style>
+</head>
+<body>  
+    <div class="img logo" id="logoB">
+        <img src="./vote.png" alt="">
+    </div>
+    
+    <header>
+        <a href="">首頁</a>
+        <a href="">結果</a>
+    
+        <a href="">登入</a>
+        <a href="">註冊</a>
+    </header>
+    <main>
+        <ul class="index-ul">            
+            <li class="index-li">
+                        <p class="main-subject">主題 : 今天要幹嘛</p>
+                        <button class="type-info" >單選</button>       
+                        <button class='normal'>公開</button>
+                     
+                        <button class="go-vote" >vote</button>
+            </li>
+             <hr>
+            
+    
+               
+            <li class="index-li">
+                        <p class="main-subject">主題 : 明天要幹嘛</p>
+                        <button class="type-info" >單選</button>       
+                        <button class='normal'>公開</button>
+                       
+                        <button class="go-vote" >vote</button>
+            </li>
+             <hr>
+            
+   
+                
+            <li class="index-li">
+                        <p class="main-subject">主題 : 今天要幹嘛</p>
+                        <button class="type-info" >單選</button>       
+                     
+                        <button class='vip-login'>會員專屬</button>
+                        <button class="go-vote" >vote</button>
+            </li>
+             <hr>
+            
+    
+                
+            <li class="index-li">
+                        <p class="main-subject">主題 : 今天要幹嘛</p>
+                        <button class="type-info" >單選</button>       
+                     
+                        <button class='vip-login'>會員專屬</button>
+                        <button class="go-vote" >vote</button>
+            </li>
+             <hr>
+            
+   
+               
+            <li class="index-li">
+                        <p class="main-subject">主題 : 今天要幹嘛</p>
+                        <button class="type-info" >單選</button>       
+                        <button class='normal'>公開</button>
+                     
+                        <button class="go-vote" >vote</button>
+            </li>
+             <hr>
+            
+   
+                 
+            <li class="index-li">
+                        <p class="main-subject">主題 : 今天要幹嘛</p>
+                        <button class="type-info" >單選</button>       
+                   
+                        <button class='vip-login'>會員專屬</button>
+                        <button class="go-vote" >vote</button>
+            </li>
+             <hr>
+            
+    </ul>
+
+
+
+</main>
+<footer></footer>
+
+<script>
+    let logoA = document.getElementById('logoA');
+    let logoB = document.getElementById('logoB');
+
+    logoA.addEventListener('mouseover', function(){
+        // console.log('AA');
+        this.style.display='none';
+        logoB.style.display='flex';
+        
+    })
+    logoA.addEventListener('mouseout', function(){
+        // console.log('AA');
+        this.style.display='flex';
+        logoB.style.display='none';
+        
+    })
+
+
+</script>
+</body>
+</html>
